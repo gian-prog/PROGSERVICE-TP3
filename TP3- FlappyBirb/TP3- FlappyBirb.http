@@ -1,0 +1,6 @@
+@TP3__FlappyBirb_HostAddress = http://localhost:5259
+
+GET {{TP3__FlappyBirb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

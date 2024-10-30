@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MaterialModule } from '../material.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { RegisterDTO } from '../models/RegisterDTO';
+import { lastValueFrom } from 'rxjs';
+
+const domain = "https://localhost:7053/";
 
 @Component({
   selector: 'app-login',
@@ -22,7 +27,7 @@ export class LoginComponent {
   loginUsername : string = "";
   loginPassword : string = "";
 
-  constructor(public route : Router) { }
+  constructor(public route : Router, public http : HttpClient) { }
 
   ngOnInit() {
   }
@@ -34,8 +39,15 @@ export class LoginComponent {
     this.route.navigate(["/play"]);
   }
 
-  register(){
 
-  }
-  
+    async register() : Promise<void> {
+        let registerDTO = new RegisterDTO(
+          this.registerUsername,
+          this.registerEmail,
+          this.registerPassword,
+          this.registerPasswordConfirm);
+        
+        let x = await lastValueFrom(this.http.post<RegisterDTO>(domain + "api/Users", registerDTO))
+        console.log(x)
+        }
 }

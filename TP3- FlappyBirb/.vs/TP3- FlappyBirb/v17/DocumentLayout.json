@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\models\\scores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:models\\scores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\data\\tp3__flappybirbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:data\\tp3__flappybirbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\models\\scores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:models\\scores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -70,14 +70,14 @@
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAwBkAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwB8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T17:58:34.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Scores.cs",
               "DocumentMoniker": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Models\\Scores.cs",
               "RelativeDocumentMoniker": "Models\\Scores.cs",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TP3__FlappyBirbContext.cs",
               "DocumentMoniker": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Data\\TP3__FlappyBirbContext.cs",
               "RelativeDocumentMoniker": "Data\\TP3__FlappyBirbContext.cs",
@@ -98,8 +98,7 @@
               "RelativeToolTip": "Data\\TP3__FlappyBirbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:34:42.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T17:34:42.555Z"
             },
             {
               "$type": "Document",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "Controllers\\ScoresController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:34:01.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T17:34:01.287Z"
             }
           ]
         }

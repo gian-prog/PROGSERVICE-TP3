@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 import { RegisterDTO } from '../models/RegisterDTO';
 import { lastValueFrom } from 'rxjs';
 import { LoginDTO } from '../models/LoginDTO';
+import { TP3Service } from '../services/tp3service';
 
-const domain = "https://localhost:7053/";
 
 @Component({
   selector: 'app-login',
@@ -29,30 +29,21 @@ export class LoginComponent {
   loginUsername : string = "";
   loginPassword : string = "";
 
-  constructor(public route : Router, public http : HttpClient) { }
+  constructor(public route : Router, public service: TP3Service) { }
 
   ngOnInit() {
+
+  }
+  
+  login(){
+    this.service.login(this.loginUsername, this.loginPassword, this.token)
+        // Redirection si la connexion a réussi :
+        //if()
+        this.route.navigate(["/play"]);
+  }
+  register(){
+  this.service.register(this.registerUsername, this.registerEmail, this.registerPassword, this.registerPasswordConfirm)
   }
 
-  async login() : Promise<void>{
-    let loginDTO = new LoginDTO(this.loginUsername, this.loginPassword, this.token);
-    let x = await lastValueFrom(this.http.post<LoginDTO>(domain + "api/Users/Login", loginDTO))
-    console.log(x)
-    localStorage.setItem("token", x.token)
 
-    // Redirection si la connexion a réussi :
-    this.route.navigate(["/play"]);
-  }
-
-
-    async register() : Promise<void> {
-        let registerDTO = new RegisterDTO(
-          this.registerUsername,
-          this.registerEmail,
-          this.registerPassword,
-          this.registerPasswordConfirm);
-        
-        let x = await lastValueFrom(this.http.post<RegisterDTO>(domain + "api/Users/Register", registerDTO))
-        console.log(x)
-        }
 }

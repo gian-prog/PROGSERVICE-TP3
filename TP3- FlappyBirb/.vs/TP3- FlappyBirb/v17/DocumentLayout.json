@@ -38,8 +38,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T18:45:39.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T18:45:39.177Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAQwAsAAAAiAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwEQAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T17:58:34.148Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Models\\Scores.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:44:33.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T17:44:33.639Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Data\\TP3__FlappyBirbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:34:42.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T17:34:42.555Z"
             }
           ]
         }

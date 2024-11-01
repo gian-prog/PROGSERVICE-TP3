@@ -24,7 +24,6 @@ export class LoginComponent {
   registerEmail : string = "";
   registerPassword : string = "";
   registerPasswordConfirm : string = "";
-  token : string = ""
 
   loginUsername : string = "";
   loginPassword : string = "";
@@ -35,10 +34,9 @@ export class LoginComponent {
 
   }
   
-  login(){
-    this.service.login(this.loginUsername, this.loginPassword, this.token)
+  async login(){
+    await this.service.login(this.loginUsername, this.loginPassword)
         // Redirection si la connexion a réussi :
-        //if()
         this.route.navigate(["/play"]);
   }
   register(){

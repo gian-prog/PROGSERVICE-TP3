@@ -22,7 +22,7 @@ export class ScoreComponent {
   async ngOnInit() {
 
     this.userIsConnected = sessionStorage.getItem("token") != null;
-
+    
 
   }
 

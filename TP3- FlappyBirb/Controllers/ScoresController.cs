@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -80,10 +81,27 @@ namespace TP3__FlappyBirb.Controllers
         [HttpPost]
         public async Task<ActionResult<Scores>> PostScores(Scores scores)
         {
-            _context.Scores.Add(scores);
-            await _context.SaveChangesAsync();
+            if(_context.Scores == null)
+            {
+                return Problem("Entity set 'TP3__FlabbyBirbContext.Scores'is null.");
+            }
+            //Trouver l'utilisateur via son token
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            User? user = await _context.Users.FindAsync(userId);
 
-            return CreatedAtAction("GetScores", new { id = scores.Id }, scores);
+            if(user != null) 
+            {
+                //Remplit références de relation
+                scores.User = user;
+                user.scores.Add(scores);
+
+                //Ajouter le score dans BD
+                _context.Scores.Add(scores);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction("GetScores", new { id = scores.Id }, scores);
+            }
+            return StatusCode(StatusCodes.Status400BadRequest, new { Message = "Utilisateur non trouvé." });
         }
 
         // DELETE: api/Scores/5

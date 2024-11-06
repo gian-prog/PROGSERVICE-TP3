@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\models\\scoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:models\\scoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\data\\tp3__flappybirbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:data\\tp3__flappybirbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\worked\\progservice-tp3\\tp3- flappybirb\\controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ScoreDTO.cs",
-              "DocumentMoniker": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Models\\ScoreDTO.cs",
-              "RelativeDocumentMoniker": "Models\\ScoreDTO.cs",
-              "ToolTip": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Models\\ScoreDTO.cs",
-              "RelativeToolTip": "Models\\ScoreDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T20:54:04.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ScoresController.cs",
               "DocumentMoniker": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
               "RelativeDocumentMoniker": "Controllers\\ScoresController.cs",
               "ToolTip": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
               "RelativeToolTip": "Controllers\\ScoresController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAqwDIAAAAJAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCIAAAB/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T17:50:03.521Z",
+              "WhenOpened": "2024-11-06T22:01:34.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TP3__FlappyBirbContext.cs",
               "DocumentMoniker": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Data\\TP3__FlappyBirbContext.cs",
               "RelativeDocumentMoniker": "Data\\TP3__FlappyBirbContext.cs",
               "ToolTip": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Data\\TP3__FlappyBirbContext.cs",
               "RelativeToolTip": "Data\\TP3__FlappyBirbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:34:42.555Z"
+              "WhenOpened": "2024-10-25T17:34:42.555Z",
+              "EditorCaption": ""
             }
           ]
         }

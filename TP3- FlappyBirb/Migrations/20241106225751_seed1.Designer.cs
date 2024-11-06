@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TP3__FlappyBirb.Data;
 
@@ -11,9 +12,11 @@ using TP3__FlappyBirb.Data;
 namespace TP3__FlappyBirb.Migrations
 {
     [DbContext(typeof(TP3__FlappyBirbContext))]
-    partial class TP3__FlappyBirbContextModelSnapshot : ModelSnapshot
+    [Migration("20241106225751_seed1")]
+    partial class seed1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

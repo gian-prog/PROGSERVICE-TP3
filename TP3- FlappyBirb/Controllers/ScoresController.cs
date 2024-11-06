@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -31,7 +32,7 @@ namespace TP3__FlappyBirb.Controllers
             {
                 return NotFound();
             }
-            IEnumerable<Scores> scores = await _context.Scores.Where(x => x.Visibilite == true).Take(10).OrderByDescending(x => x.Score).ToListAsync();
+            IEnumerable<Scores> scores = await _context.Scores.Where(x => x.Visibilite == true).OrderByDescending(x => x.Score).Take(10).ToListAsync();
             return Ok(scores.Where(c => c.User != null).Select(c => new ScoreDTO
             {
                 Id = c.Id,
@@ -63,17 +64,13 @@ namespace TP3__FlappyBirb.Controllers
         // PUT: api/Scores/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutScores(int id, Scores scores)
+        public async Task<IActionResult> PutScores(int id)
         {
-            if (id != scores.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(scores).State = EntityState.Modified;
+            Scores scores = await _context.Scores.Where(x => x.Id == id).FirstAsync();
 
             try
             {
+                scores.Visibilite = !scores.Visibilite;
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)

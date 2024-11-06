@@ -33,6 +33,7 @@ export class ScoreComponent {
 
   async changeScoreVisibility(score : Score){
 
+      await this.service.visibilityStat(score.id);
+      score.visibilite = !score.visibilite;
   }
-
 }

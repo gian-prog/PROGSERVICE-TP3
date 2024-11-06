@@ -33,45 +33,29 @@ export class TP3Service{
                 console.log(x);                    
                 }
         async getPublicScore() : Promise<Score[]>{
-                let token = localStorage.getItem("token");
-                let httpOptions = {
-                        headers : new HttpHeaders({
-                                'Content-Type' : 'application/json',
-                                'Authorization' : 'Bearer ' + token
-                        })
-                };
 
-                let x = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores/GetPublicScores", httpOptions));
+                let x = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores/GetPublicScores"));
                 console.log(x);
                 return x;
         }
         async getMyScores() : Promise<Score[]>{
                 let token = localStorage.getItem("token");
-                let httpOptions = {
-                        headers : new HttpHeaders({
-                                'Content-Type' : 'application/json',
-                                'Authorization' : 'Bearer ' + token
-                        })
-                };
 
-                let x = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores/GetMyScores", httpOptions));
+                let x = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores/GetMyScores" ));
                 console.log(x);
                 return x;
         }
+        async visibilityStat(id: Number) : Promise<void>{
+                let token = localStorage.getItem("token");
+
+                let x = await lastValueFrom(this.http.put<Score>(domain + "api/Scores/PutScores/" + id, null));
+                console.log(x);
+        }
         async postScore(score: Score) : Promise<void>{
                 let token = localStorage.getItem("token");
-                
-                let httpOptions = {
-                        headers : new HttpHeaders({
-                                'Content-Type' : 'application/json',
-                                'Authorization' : 'Bearer ' + token
-                        })
-                };
 
-                let x = await lastValueFrom(this.http.post<Score>(domain + "api/Scores/PostScores", score, httpOptions));
+                let x = await lastValueFrom(this.http.post<Score>(domain + "api/Scores/PostScores", score));
                 console.log(x);
-
-                
         }
 }
         

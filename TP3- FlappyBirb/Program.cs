@@ -52,8 +52,8 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateIssuer = true,
         ValidAudience = "http://localhost:4200", // Client-> HTTP
-        ValidIssuer = "https://localhost:7182", // Serveur -> HTTPS
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+        ValidIssuer = "https://localhost:7053", // Serveur -> HTTPS
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Loo00ongue Phrase SiNoN Ça ne Marchera PaAaAAAaAas !"))
     };
 });
 

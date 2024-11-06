@@ -37,7 +37,7 @@ export class PlayComponent implements OnInit{
   async sendScore(): Promise<void>{
     if(this.scoreSent) return;
     let score : number = JSON.parse(sessionStorage.getItem("score")!);
-    let time : string = JSON.stringify(sessionStorage.getItem("time")!);
+    let time : string = JSON.parse(sessionStorage.getItem("time")!);
 
     let newScore = new Score(0, null, null, time, score, true )
     this.scoreSent = true;

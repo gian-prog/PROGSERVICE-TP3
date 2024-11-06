@@ -66,7 +66,7 @@ namespace TP3__FlappyBirb.Controllers
                 SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Loo00ongue Phrase SiNoN Ça ne Marchera PaAaAAAaAas !"));
 
                 JwtSecurityToken token = new JwtSecurityToken(
-                    issuer: "https://localhost:7128",
+                    issuer: "https://localhost:7053",
                     audience: "http://localhost:4200",
                     claims: authClaims,
                     expires: DateTime.Now.AddMinutes(30),

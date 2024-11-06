@@ -32,7 +32,7 @@ export class TP3Service{
                 let x = await lastValueFrom(this.http.post<RegisterDTO>(domain + "api/Users/Register", registerDTO));
                 console.log(x);                    
                 }
-        async getScore() : Promise<Score[]>{
+        async getPublicScore() : Promise<Score[]>{
                 let token = localStorage.getItem("token");
                 let httpOptions = {
                         headers : new HttpHeaders({
@@ -41,12 +41,26 @@ export class TP3Service{
                         })
                 };
 
-                let x = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores/GetScores", httpOptions));
+                let x = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores/GetPublicScores", httpOptions));
+                console.log(x);
+                return x;
+        }
+        async getMyScores() : Promise<Score[]>{
+                let token = localStorage.getItem("token");
+                let httpOptions = {
+                        headers : new HttpHeaders({
+                                'Content-Type' : 'application/json',
+                                'Authorization' : 'Bearer ' + token
+                        })
+                };
+
+                let x = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores/GetMyScores", httpOptions));
                 console.log(x);
                 return x;
         }
         async postScore(score: Score) : Promise<void>{
                 let token = localStorage.getItem("token");
+                
                 let httpOptions = {
                         headers : new HttpHeaders({
                                 'Content-Type' : 'application/json',

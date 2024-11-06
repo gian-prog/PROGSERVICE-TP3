@@ -24,37 +24,40 @@ namespace TP3__FlappyBirb.Controllers
             _context = context;
         }
 
-        // GET: api/Scores
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Scores>>> GetScores()
+        public async Task<ActionResult<IEnumerable<Scores>>> GetPublicScores()
         {
-            if(_context.Scores == null)
+            if (_context.Scores == null)
             {
                 return NotFound();
             }
+            IEnumerable<Scores> scores = await _context.Scores.Where(x => x.Visibilite == true).Take(10).OrderByDescending(x => x.Score).ToListAsync();
+            return Ok(scores.Where(c => c.User != null).Select(c => new ScoreDTO
+            {
+                Id = c.Id,
+                Score = c.Score,
+                Temps = c.Temps,
+                Date = c.Date,
+                Visibilite = c.Visibilite,
+                Pseudo = c.User!.UserName
+            }));
+
+            return await _context.Scores.Where(x => x.Visibilite == true).Take(10).OrderByDescending(x => x.Score).ToListAsync();
+        }
+
+        // GET: api/Scores/5
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Scores>>> GetMyScores()
+        {
             //Trouver l'utilisateur via son token
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             User? user = await _context.Users.FindAsync(userId);
-            if(user != null)
+            if (user != null)
             {
                 return user.scores;
             }
             return StatusCode(StatusCodes.Status400BadRequest,
                 new { Message = "Utilisateur non trouvé." });
-        }
-
-        // GET: api/Scores/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Scores>> GetScores(int id)
-        {
-            var scores = await _context.Scores.FindAsync(id);
-
-            if (scores == null)
-            {
-                return NotFound();
-            }
-
-            return scores;
         }
 
         // PUT: api/Scores/5
@@ -106,11 +109,12 @@ namespace TP3__FlappyBirb.Controllers
                 //Remplit références de relation
                 scores.User = user;
                 user.scores.Add(scores);
-
+                // Donner une date au score DateTime.Now
+                scores.Date = DateTime.Now;
                 //Ajouter le score dans BD
                 _context.Scores.Add(scores);
                 await _context.SaveChangesAsync();
-                return CreatedAtAction("GetScores", new { id = scores.Id }, scores);
+                return Ok(user.scores);
             }
             return StatusCode(StatusCodes.Status400BadRequest, 
                 new { Message = "Utilisateur non trouvé." });

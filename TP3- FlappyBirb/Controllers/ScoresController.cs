@@ -28,7 +28,19 @@ namespace TP3__FlappyBirb.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Scores>>> GetScores()
         {
-            return await _context.Scores.ToListAsync();
+            if(_context.Scores == null)
+            {
+                return NotFound();
+            }
+            //Trouver l'utilisateur via son token
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            User? user = await _context.Users.FindAsync(userId);
+            if(user != null)
+            {
+                return user.scores;
+            }
+            return StatusCode(StatusCodes.Status400BadRequest,
+                new { Message = "Utilisateur non trouvé." });
         }
 
         // GET: api/Scores/5
@@ -98,10 +110,10 @@ namespace TP3__FlappyBirb.Controllers
                 //Ajouter le score dans BD
                 _context.Scores.Add(scores);
                 await _context.SaveChangesAsync();
-
                 return CreatedAtAction("GetScores", new { id = scores.Id }, scores);
             }
-            return StatusCode(StatusCodes.Status400BadRequest, new { Message = "Utilisateur non trouvé." });
+            return StatusCode(StatusCodes.Status400BadRequest, 
+                new { Message = "Utilisateur non trouvé." });
         }
 
         // DELETE: api/Scores/5

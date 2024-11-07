@@ -8,6 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using TP3__FlappyBirb.Data;
 using TP3__FlappyBirb.Models;
+using TP3__FlappyBirb.Services;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<TP3__FlappyBirbContext>(options =>
 {
@@ -26,6 +27,11 @@ builder.Services.AddCors(options =>
 
     });
 });
+// Ajouter les services au conteneur
+builder.Services.AddControllers();
+
+// Enregistrer le service ScoreService
+builder.Services.AddScoped<ScoreTP3service>();
 builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<TP3__FlappyBirbContext>();
 
 

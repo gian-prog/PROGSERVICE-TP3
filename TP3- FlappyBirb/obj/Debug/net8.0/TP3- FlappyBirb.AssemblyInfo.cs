@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP3- FlappyBirb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21a90a1bfeaa3e27019cdc9ac43ff8edc22c82fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fd4577452f1da4a0a77d0bc4a7622900a7a50fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP3- FlappyBirb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP3- FlappyBirb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

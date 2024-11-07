@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\data\\tp3__flappybirbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:data\\tp3__flappybirbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\services\\scoretp3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:services\\scoretp3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,32 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ScoresController.cs",
               "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
               "RelativeDocumentMoniker": "Controllers\\ScoresController.cs",
               "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
               "RelativeToolTip": "Controllers\\ScoresController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAiwCcAAAAgAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAkwC4AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T22:01:34.59Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScoreTP3service.cs",
+              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Services\\ScoreTP3service.cs",
+              "RelativeDocumentMoniker": "Services\\ScoreTP3service.cs",
+              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Services\\ScoreTP3service.cs",
+              "RelativeToolTip": "Services\\ScoreTP3service.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAEQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T13:34:36.199Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TP3__FlappyBirbContext.cs",
-              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Data\\TP3__FlappyBirbContext.cs",
-              "RelativeDocumentMoniker": "Data\\TP3__FlappyBirbContext.cs",
-              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Data\\TP3__FlappyBirbContext.cs",
-              "RelativeToolTip": "Data\\TP3__FlappyBirbContext.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAUwE0AAAAPAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:34:42.555Z",
+              "WhenOpened": "2024-11-07T16:30:50.013Z",
               "EditorCaption": ""
             }
           ]

@@ -48,13 +48,13 @@ export class TP3Service{
         async visibilityStat(id: Number) : Promise<void>{
                 let token = localStorage.getItem("token");
 
-                let x = await lastValueFrom(this.http.put<Score>(domain + "api/Scores/PutScores/" + id, null));
+                let x = await lastValueFrom(this.http.put<Score>(domain + "api/Scores/ChangeScoreVisibility/" + id, null));
                 console.log(x);
         }
         async postScore(score: Score) : Promise<void>{
                 let token = localStorage.getItem("token");
 
-                let x = await lastValueFrom(this.http.post<Score>(domain + "api/Scores/PostScores", score));
+                let x = await lastValueFrom(this.http.post<Score>(domain + "api/Scores/PostScore", score));
                 console.log(x);
         }
 }

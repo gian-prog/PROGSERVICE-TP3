@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\migrations\\tp3__flappybirbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:migrations\\tp3__flappybirbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\migrations\\20241107170709_seed2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:migrations\\20241107170709_seed2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\services\\scoretp3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|c:\\workservice\\progservice-tp3\\tp3- flappybirb\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9AB7E3-A5E3-4BF8-A971-A4B19A83642B}|TP3- FlappyBirb.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,47 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ScoresController.cs",
-              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ScoresController.cs",
-              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
-              "RelativeToolTip": "Controllers\\ScoresController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAkwC4AAABKAAAA",
+              "DocumentIndex": 0,
+              "Title": "TP3__FlappyBirbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Migrations\\TP3__FlappyBirbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\TP3__FlappyBirbContextModelSnapshot.cs",
+              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Migrations\\TP3__FlappyBirbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\TP3__FlappyBirbContextModelSnapshot.cs",
+              "ViewState": "AQIAAHMBAAAAAAAAAAAwwIYBAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:01:34.59Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-11-07T17:11:16.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "20241107170709_seed2.cs",
+              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Migrations\\20241107170709_seed2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241107170709_seed2.cs",
+              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Migrations\\20241107170709_seed2.cs",
+              "RelativeToolTip": "Migrations\\20241107170709_seed2.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T17:10:55.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ScoreTP3service.cs",
               "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Services\\ScoreTP3service.cs",
               "RelativeDocumentMoniker": "Services\\ScoreTP3service.cs",
               "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Services\\ScoreTP3service.cs",
               "RelativeToolTip": "Services\\ScoreTP3service.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAAEQAAAAiAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAcwDgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T13:34:36.199Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-11-07T16:53:33.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAuAAAA",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T16:30:50.013Z",
+              "WhenOpened": "2024-11-07T16:53:14.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScoresController.cs",
+              "DocumentMoniker": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ScoresController.cs",
+              "ToolTip": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\Controllers\\ScoresController.cs",
+              "RelativeToolTip": "Controllers\\ScoresController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T16:53:06.124Z",
               "EditorCaption": ""
             }
           ]

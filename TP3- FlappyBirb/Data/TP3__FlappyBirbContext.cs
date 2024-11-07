@@ -37,7 +37,7 @@ namespace TP3__FlappyBirb.Data
                 Temps = 120.00,
                 Date = DateTime.Now,
                 Visibilite = true,
-                userId = "11111111-1111-1111-1111-111111111111"
+                UserId = u1.Id
             }, new
             {
                 Id = 2,
@@ -45,7 +45,7 @@ namespace TP3__FlappyBirb.Data
                 Temps = 60.00,
                 Date = DateTime.Now,
                 Visibilite = false,
-                userId = "11111111-1111-1111-1111-111111111111"
+                UserId = u1.Id
             });
 
             User u2 = new User
@@ -66,7 +66,7 @@ namespace TP3__FlappyBirb.Data
                 Temps = 200.00,
                 Date = DateTime.Now,
                 Visibilite = true,
-                userId = "11111111-1111-1111-1111-111111111112"
+                UserId = u2.Id
             }, new
             {
                 Id = 4,
@@ -74,7 +74,7 @@ namespace TP3__FlappyBirb.Data
                 Temps = 5.00,
                 Date = DateTime.Now,
                 Visibilite = false,
-                userId = "11111111-1111-1111-1111-111111111112"
+                UserId = u2.Id
             });
 
         }

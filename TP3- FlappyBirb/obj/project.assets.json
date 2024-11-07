@@ -8131,11 +8131,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\TP3- FlappyBirb.csproj",
+      "projectUniqueName": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\TP3- FlappyBirb.csproj",
       "projectName": "TP3- FlappyBirb",
-      "projectPath": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\TP3- FlappyBirb.csproj",
+      "projectPath": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\TP3- FlappyBirb.csproj",
       "packagesPath": "C:\\Users\\6262557\\.nuget\\packages\\",
-      "outputPath": "C:\\worked\\PROGSERVICE-TP3\\TP3- FlappyBirb\\obj\\",
+      "outputPath": "C:\\workService\\PROGSERVICE-TP3\\TP3- FlappyBirb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

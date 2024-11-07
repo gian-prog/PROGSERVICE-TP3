@@ -12,7 +12,7 @@ using TP3__FlappyBirb.Data;
 namespace TP3__FlappyBirb.Migrations
 {
     [DbContext(typeof(TP3__FlappyBirbContext))]
-    [Migration("20241106225751_seed1")]
+    [Migration("20241107132145_seed1")]
     partial class seed1
     {
         /// <inheritdoc />
@@ -194,7 +194,7 @@ namespace TP3__FlappyBirb.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 6, 17, 57, 50, 727, DateTimeKind.Local).AddTicks(2837),
+                            Date = new DateTime(2024, 11, 7, 8, 21, 44, 58, DateTimeKind.Local).AddTicks(9672),
                             Score = 1000,
                             Temps = 120.0,
                             Visibilite = true
@@ -202,15 +202,15 @@ namespace TP3__FlappyBirb.Migrations
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2024, 11, 6, 17, 57, 50, 727, DateTimeKind.Local).AddTicks(2890),
+                            Date = new DateTime(2024, 11, 7, 8, 21, 44, 58, DateTimeKind.Local).AddTicks(9790),
                             Score = 800,
                             Temps = 60.0,
-                            Visibilite = true
+                            Visibilite = false
                         },
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2024, 11, 6, 17, 57, 50, 788, DateTimeKind.Local).AddTicks(7450),
+                            Date = new DateTime(2024, 11, 7, 8, 21, 44, 163, DateTimeKind.Local).AddTicks(5935),
                             Score = 400,
                             Temps = 200.0,
                             Visibilite = true
@@ -218,10 +218,10 @@ namespace TP3__FlappyBirb.Migrations
                         new
                         {
                             Id = 4,
-                            Date = new DateTime(2024, 11, 6, 17, 57, 50, 788, DateTimeKind.Local).AddTicks(7524),
+                            Date = new DateTime(2024, 11, 7, 8, 21, 44, 163, DateTimeKind.Local).AddTicks(6142),
                             Score = 34,
                             Temps = 5.0,
-                            Visibilite = true
+                            Visibilite = false
                         });
                 });
 
@@ -294,15 +294,15 @@ namespace TP3__FlappyBirb.Migrations
                         {
                             Id = "11111111-1111-1111-1111-111111111111",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "10083125-9aef-44f8-b21e-4df0540a12d4",
+                            ConcurrencyStamp = "ade44dc4-3323-419c-b738-49a1218fcafd",
                             Email = "maxime@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "MAXIME@GMAIL.COM",
                             NormalizedUserName = "MAXIME22",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFOW6EnJJp7jw6J1K5iDAe0Qq6guggvVUonwSDwzJyYiJOl3jnsx7ZRhpEeREv9lZA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKB/qcdguStP/gXrZIUXS0jCyuwbyTClWzq6fI3cfVSBQn3SbPEpqYe/w/2SLD9QTg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6de70686-5978-48d8-b385-3b7a7674fbd7",
+                            SecurityStamp = "a5b70afb-2ef1-4c29-b5ba-c69870bb266d",
                             TwoFactorEnabled = false,
                             UserName = "Maxime22"
                         },
@@ -310,14 +310,15 @@ namespace TP3__FlappyBirb.Migrations
                         {
                             Id = "11111111-1111-1111-1111-111111111112",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4fcad41e-51c1-4e19-aad8-49860095208f",
+                            ConcurrencyStamp = "3ffee646-62b6-49f9-8b62-a7cf3a615ef7",
                             Email = "maximus@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "MAXIMUS@GMAIL.COM",
                             NormalizedUserName = "MAXIMUS23",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG9MwdXAnvMSCgdja3Zh4ez3nbhlLbts7YKd7zy7k31+TbJI8k2jvmMcHUDGozo4eg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b4909f81-8bbb-4adc-aba8-9bcff28831f9",
+                            SecurityStamp = "c2c707db-4e32-451c-8f75-42889cc8e023",
                             TwoFactorEnabled = false,
                             UserName = "Maximus23"
                         });

@@ -44,20 +44,20 @@ namespace TP3__FlappyBirb.Data
                 Score = 800,
                 Temps = 60.00,
                 Date = DateTime.Now,
-                Visibilite = true,
+                Visibilite = false,
                 userId = "11111111-1111-1111-1111-111111111111"
             });
 
             User u2 = new User
             {
-                Id = "11111111-1111-1111-1111-111111111112", // Format GUID
+                Id = "11111111-1111-1111-1111-111111111112", 
                 UserName = "Maximus23",
                 Email = "maximus@gmail.com",
                 NormalizedEmail = "MAXIMUS@GMAIL.COM",
                 NormalizedUserName = "MAXIMUS23"
 
             };
-            u1.PasswordHash = hasher.HashPassword(u2, "Salut1!");
+            u2.PasswordHash = hasher.HashPassword(u2, "Salut1!");
             builder.Entity<User>().HasData(u2);
             builder.Entity<Scores>().HasData(new
             {
@@ -73,7 +73,7 @@ namespace TP3__FlappyBirb.Data
                 Score = 34,
                 Temps = 5.00,
                 Date = DateTime.Now,
-                Visibilite = true,
+                Visibilite = false,
                 userId = "11111111-1111-1111-1111-111111111112"
             });
 
